@@ -27,7 +27,7 @@ function UploadImage({address}){
         formData.append('file',fileInputRef.current.files[0]);
         formData.append('address',address);
         try{
-            const response=await axios.post('http://localhost:3000/upload',formData,{
+            const response=await axios.post('http://43.129.194.130:5001',formData,{
                 headers:{
                     'Content-Type':'multipart/form-data'
                 }
